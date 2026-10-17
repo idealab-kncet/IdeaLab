@@ -13,7 +13,7 @@ export default function About() {
 
       {/* Page Header */}
       <header className="page-header"
-        style={{backgroundImage: "linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('/idealab.webp')"}}>
+        style={{backgroundImage: `linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('${import.meta.env.BASE_URL}idealab.webp')`}}>
         <div className="container">
           <h1>About The Lab</h1>
           <p className="breadcrumb">Home / About Lab</p>
@@ -25,7 +25,7 @@ export default function About() {
         <div className="container">
           <div className="about-layout">
             <div className="about-image">
-              <img src="/idealab.webp" alt="AICTE IDEA Lab interior workspace at Kongunadu College of Engineering and Technology"
+              <img src={`${import.meta.env.BASE_URL}idealab.webp`} alt="AICTE IDEA Lab interior workspace at Kongunadu College of Engineering and Technology"
                 className="about-img" />
             </div>
             <div className="about-content">

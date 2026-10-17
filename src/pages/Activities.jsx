@@ -12,7 +12,7 @@ export default function Activities() {
 
       {/* Page Header */}
       <header className="page-header"
-        style={{backgroundImage: "linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('/idealab.webp')"}}>
+        style={{backgroundImage: `linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('${import.meta.env.BASE_URL}idealab.webp')`}}>
         <div className="container">
           <h1>Activities</h1>
           <p className="breadcrumb">Home / Activities</p>

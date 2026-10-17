@@ -9,7 +9,7 @@
 // ships real content on the very first response — the client bundle then
 // takes over exactly as before once it loads.
 import { spawn, exec } from 'node:child_process';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import puppeteer from 'puppeteer';
@@ -30,6 +30,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(__dirname, '..');
 const distDir = join(rootDir, 'dist');
 const port = 4321;
+const segment = (process.env.VITE_BASE || '').replace(/^\/+|\/+$/g, '');
+const basePath = segment ? `/${segment}` : '';
 const baseUrl = `http://localhost:${port}`;
 
 // '/' is rendered LAST: vite preview's static file server serves dist/index.html
@@ -77,7 +79,7 @@ async function main() {
 
   try {
     console.log('Waiting for preview server...');
-    await waitForServer(baseUrl);
+    await waitForServer(`${baseUrl}${basePath}/`);
     console.log('Preview server is up.');
 
     console.log('Launching browser...');
@@ -90,7 +92,7 @@ async function main() {
       for (const route of ROUTES) {
         console.log(`Rendering ${route}...`);
         const page = await browser.newPage();
-        await page.goto(`${baseUrl}${route}`, { waitUntil: 'networkidle0', timeout: 30000 });
+        await page.goto(`${baseUrl}${basePath}${route}`, { waitUntil: 'networkidle0', timeout: 30000 });
         // Give React a moment past networkidle for any late state updates.
         await new Promise((r) => setTimeout(r, 300));
         const html = await page.content();
@@ -102,6 +104,7 @@ async function main() {
             : join(distDir, route.slice(1), 'index.html');
         await mkdir(dirname(outPath), { recursive: true });
         await writeFile(outPath, html, 'utf-8');
+        if (route === '/') await copyFile(outPath, join(distDir, '404.html'));
         console.log(`Prerendered ${route} -> ${outPath.replace(rootDir + '\\', '').replace(rootDir + '/', '')}`);
       }
     } finally {

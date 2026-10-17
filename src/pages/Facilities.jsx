@@ -85,7 +85,7 @@ export default function Facilities() {
 
       {/* Page Header */}
       <header className="page-header"
-        style={{backgroundImage: "linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('/idealab.webp')"}}>
+        style={{backgroundImage: `linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('${import.meta.env.BASE_URL}idealab.webp')`}}>
         <div className="container">
           <h1>Facilities</h1>
           <p className="breadcrumb">Home / Facilities</p>
@@ -104,7 +104,7 @@ export default function Facilities() {
               style={{borderRadius: '12px', overflow: 'hidden', height: '280px', position: 'relative', cursor: 'pointer', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)'}}
               onClick={() => handleImageClick(21)}
               onKeyDown={(e) => handleTileKeyDown(e, 21)}>
-              <img src="/facilities/facility-21.webp"
+              <img src={`${import.meta.env.BASE_URL}facilities/facility-21.webp`}
                 style={{width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'}}
                 onMouseOver={(e) => e.currentTarget.style.transform='scale(1.15)'}
                 onMouseOut={(e) => e.currentTarget.style.transform='scale(1)'}
@@ -121,7 +121,7 @@ export default function Facilities() {
                 style={{borderRadius: '12px', overflow: 'hidden', height: '280px', position: 'relative', cursor: 'pointer', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)'}}
                 onClick={() => handleImageClick(num)}
                 onKeyDown={(e) => handleTileKeyDown(e, num)}>
-                <img src={`/facilities/facility-${String(num).padStart(2, '0')}.webp`}
+                <img src={`${import.meta.env.BASE_URL}facilities/facility-${String(num).padStart(2, '0')}.webp`}
                   style={{width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'}}
                   onMouseOver={(e) => e.currentTarget.style.transform='scale(1.15)'}
                   onMouseOut={(e) => e.currentTarget.style.transform='scale(1)'}
@@ -139,7 +139,7 @@ export default function Facilities() {
                 style={{borderRadius: '12px', overflow: 'hidden', height: '280px', position: 'relative', cursor: 'pointer', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)'}}
                 onClick={() => handleImageClick(num)}
                 onKeyDown={(e) => handleTileKeyDown(e, num)}>
-                <img src={`/facilities/facility-${String(num).padStart(2, '0')}.webp`}
+                <img src={`${import.meta.env.BASE_URL}facilities/facility-${String(num).padStart(2, '0')}.webp`}
                   style={{width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)'}}
                   onMouseOver={(e) => e.currentTarget.style.transform='scale(1.15)'}
                   onMouseOut={(e) => e.currentTarget.style.transform='scale(1)'}
@@ -217,7 +217,7 @@ export default function Facilities() {
           }}
           onClick={(e) => e.stopPropagation()}>
             <img
-              src={`/facilities/facility-${String(selectedImage).padStart(2, '0')}.webp`}
+              src={`${import.meta.env.BASE_URL}facilities/facility-${String(selectedImage).padStart(2, '0')}.webp`}
               alt={getFacilityAlt(selectedImage)}
               style={{
                 maxWidth: '100%',

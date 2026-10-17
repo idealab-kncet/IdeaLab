@@ -14,7 +14,7 @@ function Home() {
     const markLoaded = () => setPosterLoaded(true);
     img.onload = markLoaded;
     img.onerror = markLoaded;
-    img.src = '/images.jpg';
+    img.src = `${import.meta.env.BASE_URL}images.jpg`;
     // If it was already cached, the load event may have fired before the
     // handlers above were attached — check on the next tick to be sure.
     const timer = setTimeout(() => {
@@ -81,7 +81,7 @@ function Home() {
             or hasn't started mounting yet — see readyForVideo above) */}
         {videoFailed || !readyForVideo ? (
           <img
-            src="/images.jpg"
+            src={`${import.meta.env.BASE_URL}images.jpg`}
             alt=""
             className="hero-video"
             style={{ objectFit: 'cover', opacity: posterLoaded ? 1 : 0, transition: 'opacity 0.5s ease' }}
@@ -93,7 +93,7 @@ function Home() {
             muted
             playsInline
             preload="metadata"
-            poster="/images.jpg"
+            poster={`${import.meta.env.BASE_URL}images.jpg`}
             className="hero-video"
             style={{ opacity: posterLoaded ? 1 : 0, transition: 'opacity 0.5s ease' }}
             onError={() => setVideoFailed(true)}
@@ -122,7 +122,7 @@ function Home() {
         {/* Content */}
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <h1 className="hero-title">
-            <img src="/Kongunadu.webp" alt="Kongunadu" className="hero-logo" />
+            <img src={`${import.meta.env.BASE_URL}Kongunadu.webp`} alt="Kongunadu" className="hero-logo" />
             <span>AICTE IDEA Lab</span>
           </h1>
 

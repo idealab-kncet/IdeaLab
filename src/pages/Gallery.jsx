@@ -2,8 +2,8 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import Seo from '../components/Seo';
 
 const GALLERY_IMAGES = {
-  1: { src: '/gallery/gallery-01.webp', alt: 'AICTE IDEA Lab gallery photo 1' },
-  2: { src: '/gallery/gallery-02.webp', alt: 'AICTE IDEA Lab gallery photo 2' },
+  1: { src: `${import.meta.env.BASE_URL}gallery/gallery-01.webp`, alt: 'AICTE IDEA Lab gallery photo 1' },
+  2: { src: `${import.meta.env.BASE_URL}gallery/gallery-02.webp`, alt: 'AICTE IDEA Lab gallery photo 2' },
 };
 
 export default function Gallery() {
@@ -84,7 +84,7 @@ export default function Gallery() {
 
       {/* Page Header */}
       <header className="page-header"
-        style={{backgroundImage: "linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('/idealab.webp')"}}>
+        style={{backgroundImage: `linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('${import.meta.env.BASE_URL}idealab.webp')`}}>
         <div className="container">
           <h1>Gallery</h1>
           <p className="breadcrumb">Home / Gallery</p>

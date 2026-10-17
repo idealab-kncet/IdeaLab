@@ -16,7 +16,7 @@ Official website of the AICTE IDEA Lab at **Kongunadu College of Engineering and
 ![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-ffca28?style=flat-square&logo=firebase&logoColor=black)
 ![SEO](https://img.shields.io/badge/SEO-Prerendered-2ea44f?style=flat-square)
 
-[Visit the website](https://idealab.kongunadu.ac.in/) &nbsp;|&nbsp; [About](https://idealab.kongunadu.ac.in/about) &nbsp;|&nbsp; [Services](https://idealab.kongunadu.ac.in/services) &nbsp;|&nbsp; [Facilities](https://idealab.kongunadu.ac.in/facilities) &nbsp;|&nbsp; [Contact](https://idealab.kongunadu.ac.in/contact)
+[Visit the website](https://idealab.kongunadu.ac.in/) &nbsp;|&nbsp; [GitHub Pages](https://idealab-kncet.github.io/IdeaLab/) &nbsp;|&nbsp; [About](https://idealab.kongunadu.ac.in/about) &nbsp;|&nbsp; [Services](https://idealab.kongunadu.ac.in/services) &nbsp;|&nbsp; [Facilities](https://idealab.kongunadu.ac.in/facilities) &nbsp;|&nbsp; [Contact](https://idealab.kongunadu.ac.in/contact)
 
 </div>
 
@@ -84,7 +84,7 @@ IPR &middot; Networking
 - **Fast and lightweight.** Single-page React app on Vite, with all photos pre-resized
   (max 1600px) and served as WebP.
 - **Responsive design.** Built to read well on phones, tablets and desktops.
-- **Reliable hosting.** Served from Firebase Hosting on the college's custom domain.
+- **Reliable hosting.** Served from Firebase Hosting on the college domain, with a GitHub Pages mirror deployed automatically by GitHub Actions on every push to `main`.
 
 ## Tech stack
 
@@ -95,7 +95,7 @@ IPR &middot; Networking
 | Routing | React Router 7 |
 | SEO | react-helmet-async, JSON-LD, build-time prerendering with Puppeteer |
 | Quality | ESLint 9 |
-| Hosting | Firebase Hosting |
+| Hosting | Firebase Hosting, GitHub Pages (GitHub Actions) |
 
 ## Architecture
 

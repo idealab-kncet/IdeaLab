@@ -12,7 +12,7 @@ export default function Vision() {
 
       {/* Page Header */}
       <header className="page-header"
-        style={{backgroundImage: "linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('/idealab.webp')"}}>
+        style={{backgroundImage: `linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('${import.meta.env.BASE_URL}idealab.webp')`}}>
         <div className="container">
           <h1>Vision & Mission</h1>
           <p className="breadcrumb">Home / Vision & Mission</p>
