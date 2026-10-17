@@ -122,7 +122,7 @@ IPR &middot; Networking
   </tr>
   <tr>
     <td><strong>Email</strong></td>
-    <td><a href="mailto:idealab@kongunadu.ac.in">idealab-kncet.github.io/IdeaLab</a></td>
+    <td><a href="mailto:idealab@kongunadu.ac.in">idealab@kongunadu.ac.in</a></td>
   </tr>
   <tr>
     <td><strong>Phone</strong></td>
