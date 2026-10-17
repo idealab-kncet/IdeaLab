@@ -1,117 +1,148 @@
-# AICTE IDEA Lab Website
+<div align="center">
 
-Official website of the **AICTE IDEA (Idea Development, Evaluation & Application) Lab** at
-**Kongunadu College of Engineering and Technology (KNCET), Trichy**.
+<img src="public/idealab.webp" alt="AICTE IDEA Lab, KNCET" width="720" />
 
-**Live site:** https://idealab.kongunadu.ac.in/
+# AICTE IDEA Lab
 
-The lab gives students hands-on resources to turn STEM ideas into working prototypes,
-supported by training, mentoring, seed funding and incubation. This site presents the lab's
-vision, services, activities, facilities, team and contact details.
+### Idea Development, Evaluation & Application
 
-## Pages
+Official website of the AICTE IDEA Lab at **Kongunadu College of Engineering and Technology**, Trichy.
 
-| Route         | Purpose                                                        |
-| ------------- | -------------------------------------------------------------- |
-| `/`           | Home: overview, highlights and call to action                  |
-| `/about`      | About the lab and the AICTE IDEA Lab initiative                |
-| `/vision`     | Vision and mission                                             |
-| `/services`   | Training, seed fund, mentoring, incubation, IPR, consultancy and more |
-| `/activities` | FDPs, bootcamps, workshops, exhibitions, symposium             |
-| `/facilities` | Equipment and infrastructure                                   |
-| `/team`       | Coordinators and student team                                  |
-| `/gallery`    | Photo gallery                                                  |
-| `/contact`    | Address, phone, email and lab hours                            |
+[![Live Site](https://img.shields.io/badge/Live-idealab.kongunadu.ac.in-0a66c2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://idealab.kongunadu.ac.in/)
+
+![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646cff?style=flat-square&logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-7-ca4245?style=flat-square&logo=reactrouter&logoColor=white)
+![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-ffca28?style=flat-square&logo=firebase&logoColor=black)
+![SEO](https://img.shields.io/badge/SEO-Prerendered-2ea44f?style=flat-square)
+
+[Visit the website](https://idealab.kongunadu.ac.in/) &nbsp;|&nbsp; [About](https://idealab.kongunadu.ac.in/about) &nbsp;|&nbsp; [Services](https://idealab.kongunadu.ac.in/services) &nbsp;|&nbsp; [Facilities](https://idealab.kongunadu.ac.in/facilities) &nbsp;|&nbsp; [Contact](https://idealab.kongunadu.ac.in/contact)
+
+</div>
+
+---
+
+## Overview
+
+The AICTE IDEA Lab gives students hands-on resources to turn STEM ideas into working
+prototypes, open 24x7 and supported by training, mentoring, seed funding and incubation.
+
+This website is the lab's public face. It presents the lab's vision, services, activities,
+facilities and team to students, faculty, industry partners and visitors, and makes the
+lab easy to find on search engines.
+
+## What the website offers
+
+| | |
+| --- | --- |
+| **Vision and mission** | The purpose of the lab and the innovation culture it builds on campus |
+| **Services** | A single place to see how the lab supports an idea from concept to market |
+| **Activities** | Workshops, bootcamps, programmes and events run through the year |
+| **Facilities** | A photo tour of the equipment and spaces available to students |
+| **Team** | The coordinators and people who run the lab |
+| **Gallery and contact** | Lab photos, address, phone, email and opening hours |
+
+## Site map
+
+| Page | Route | Description |
+| --- | --- | --- |
+| Home | `/` | Overview, highlights and entry points to the rest of the site |
+| About | `/about` | The lab and the AICTE IDEA Lab initiative |
+| Vision & Mission | `/vision` | Goals and guiding principles |
+| Services | `/services` | Everything the lab offers to innovators |
+| Activities | `/activities` | Programmes, workshops and events |
+| Facilities | `/facilities` | Equipment and infrastructure |
+| Team | `/team` | People behind the lab |
+| Gallery | `/gallery` | Photos from the lab |
+| Contact | `/contact` | How to reach and visit the lab |
+
+## Services at a glance
+
+Training &middot; Seed Fund &middot; Development &middot; Mentoring &middot; Incubation &middot;
+Internship &middot; Startup &middot; Commercialisation &middot; Consultancy &middot; Marketing &middot;
+IPR &middot; Networking
+
+## Activities
+
+- Faculty Development Programmes (FDP)
+- Skilling and professional skilling programmes
+- Bootcamps and ideation workshops
+- Industry awareness workshops
+- Internship programmes
+- School teachers' awareness and open day for school students
+- Annual technical exhibitions
+- Annual conference / symposium
+- Newsletter, official website and knowledge portal
+
+## Engineering highlights
+
+- **Search-ready from the first byte.** Every route is prerendered to static HTML at build
+  time, so search engines and link-preview bots see real titles, descriptions and content
+  without running JavaScript.
+- **Structured data.** `EducationalOrganization`, `BreadcrumbList` and `FAQPage` JSON-LD,
+  plus per-page canonical and Open Graph tags, `robots.txt` and `sitemap.xml`.
+- **Fast and lightweight.** Single-page React app on Vite, with all photos pre-resized
+  (max 1600px) and served as WebP.
+- **Responsive design.** Built to read well on phones, tablets and desktops.
+- **Reliable hosting.** Served from Firebase Hosting on the college's custom domain.
 
 ## Tech stack
 
-- **Framework:** React 19, Vite 7, React Router 7
-- **SEO:** per-route title, description, canonical and Open Graph tags (`react-helmet-async`),
-  JSON-LD (`EducationalOrganization`, `BreadcrumbList`, `FAQPage`), `robots.txt`, `sitemap.xml`
-- **Prerendering:** Puppeteer snapshots every route at build time so crawlers and link-preview
-  bots receive real HTML without running JavaScript
-- **Hosting:** Firebase Hosting (project `kncet-idealab`) on a custom domain
-- **Tooling:** ESLint 9, `sharp-cli` for image optimisation
+| Layer | Technology |
+| --- | --- |
+| UI | React 19 |
+| Build | Vite 7 |
+| Routing | React Router 7 |
+| SEO | react-helmet-async, JSON-LD, build-time prerendering with Puppeteer |
+| Quality | ESLint 9 |
+| Hosting | Firebase Hosting |
 
-## Getting started
-
-Prerequisites: Node.js 20 or later and npm.
-
-```bash
-git clone https://github.com/idealab-kncet/IdeaLab.git
-cd IdeaLab
-npm install
-npm run dev
-```
-
-The dev server runs at http://localhost:5173.
-
-### Scripts
-
-| Command           | Description                                      |
-| ----------------- | ------------------------------------------------ |
-| `npm run dev`     | Start the Vite dev server                        |
-| `npm run build`   | Production build, then prerender all routes      |
-| `npm run preview` | Serve the production build locally               |
-| `npm run lint`    | Run ESLint                                       |
-
-## Project structure
+## Architecture
 
 ```
 .
 ├── public/               Static assets: images, robots.txt, sitemap.xml
-│   ├── facilities/       Facility photos (WebP, max 1600px)
-│   └── gallery/          Gallery photos (WebP, max 1600px)
+│   ├── facilities/       Facility photos
+│   └── gallery/          Gallery photos
 ├── scripts/
-│   └── prerender.js      Post-build static prerendering
+│   └── prerender.js      Build-time static prerendering of every route
 ├── src/
 │   ├── components/       Navbar, Footer, Seo, FaqSection
-│   ├── pages/            One component per route, plus NotFound
+│   ├── pages/            One component per route
 │   ├── App.jsx           Route definitions
-│   ├── App.css           Site styles
-│   ├── index.css         Global styles
-│   └── main.jsx          Entry point
+│   └── main.jsx          Application entry point
 ├── firebase.json         Hosting configuration
-└── vite.config.js
+└── vite.config.js        Build configuration
 ```
-
-## Build and deployment
-
-```bash
-npm run build
-firebase deploy --only hosting
-```
-
-`npm run build` bundles the app into `dist/`, then `scripts/prerender.js` writes a
-static `dist/<route>/index.html` for each route. Firebase serves these files first and
-falls back to the SPA rewrite (`** -> /index.html`) for anything else.
-
-## Contributing content
-
-### Adding a page
-
-1. Create the component in `src/pages/`.
-2. Register its `<Route>` in `src/App.jsx`.
-3. Add a link in `src/components/Navbar.jsx` (and the footer if relevant).
-4. Add a `<Seo>` block with a unique title, description and breadcrumbs.
-5. Add the route to `ROUTES` in `scripts/prerender.js` and to `public/sitemap.xml`.
-
-### Adding photos
-
-Resize images to a maximum of 1600px and convert them to WebP before adding them to
-`public/facilities/` or `public/gallery/`, so the browser never downscales a large original
-for a small thumbnail.
 
 ## Contact
 
-AICTE IDEA Lab, Kongunadu College of Engineering and Technology, Trichy
-Email: idealab@kongunadu.ac.in | Phone: +91 86800 02425
+<table>
+  <tr>
+    <td><strong>Address</strong></td>
+    <td>AICTE IDEA Lab, Kongunadu College of Engineering and Technology, Trichy</td>
+  </tr>
+  <tr>
+    <td><strong>Email</strong></td>
+    <td><a href="mailto:idealab@kongunadu.ac.in">idealab@kongunadu.ac.in</a></td>
+  </tr>
+  <tr>
+    <td><strong>Phone</strong></td>
+    <td><a href="tel:+918680002425">+91 86800 02425</a></td>
+  </tr>
+  <tr>
+    <td><strong>Website</strong></td>
+    <td><a href="https://idealab.kongunadu.ac.in/">idealab.kongunadu.ac.in</a></td>
+  </tr>
+</table>
 
 ## Credits
 
-Designed and developed by:
+Designed and developed by **Akhil R** and **Ravichandran P**, Final Year CSE (Batch 2023-2027),
+Kongunadu College of Engineering and Technology.
 
-- Akhil R, Final Year CSE (Batch 2023-2027)
-- Ravichandran P, Final Year CSE (Batch 2023-2027)
+<div align="center">
 
-Content and branding belong to Kongunadu College of Engineering and Technology and AICTE.
+<sub>Content and branding belong to Kongunadu College of Engineering and Technology and AICTE.</sub>
+
+</div>
