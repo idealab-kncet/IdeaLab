@@ -1,7 +1,7 @@
 {
-  "name": "react",
+  "name": "kncet-idealab-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "authors": [
     "Akhil R (Final Year CSE, Batch 2023-2027)",
