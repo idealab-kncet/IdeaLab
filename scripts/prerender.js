@@ -4,10 +4,9 @@
 // that don't execute JavaScript (Bing, LinkedIn, WhatsApp, most AI answer
 // engines) see nothing. This script serves the built app, visits each route
 // with a real browser, waits for React to render, and writes the resulting
-// HTML back into dist/<route>/index.html. Firebase Hosting serves a matching
-// static file before falling back to the SPA rewrite, so each route now
-// ships real content on the very first response — the client bundle then
-// takes over exactly as before once it loads.
+// HTML back into dist/<route>/index.html, so each route ships real content on
+// the very first response — the client bundle then takes over exactly as
+// before once it loads.
 import { spawn, exec } from 'node:child_process';
 import { copyFile, mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';

@@ -8,15 +8,14 @@
 
 Official website of the AICTE IDEA Lab at **Kongunadu College of Engineering and Technology**, Trichy.
 
-[![Live Site](https://img.shields.io/badge/Live-idealab.kongunadu.ac.in-0a66c2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://idealab.kongunadu.ac.in/)
+[![Live Site](https://img.shields.io/badge/Live-idealab--kncet.github.io%2FIdeaLab-0a66c2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://idealab-kncet.github.io/IdeaLab/)
 
 ![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7-646cff?style=flat-square&logo=vite&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-7-ca4245?style=flat-square&logo=reactrouter&logoColor=white)
-![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-ffca28?style=flat-square&logo=firebase&logoColor=black)
 ![SEO](https://img.shields.io/badge/SEO-Prerendered-2ea44f?style=flat-square)
 
-[Visit the website](https://idealab.kongunadu.ac.in/) &nbsp;|&nbsp; [GitHub Pages](https://idealab-kncet.github.io/IdeaLab/) &nbsp;|&nbsp; [About](https://idealab.kongunadu.ac.in/about) &nbsp;|&nbsp; [Services](https://idealab.kongunadu.ac.in/services) &nbsp;|&nbsp; [Facilities](https://idealab.kongunadu.ac.in/facilities) &nbsp;|&nbsp; [Contact](https://idealab.kongunadu.ac.in/contact)
+[Visit the website](https://idealab-kncet.github.io/IdeaLab/) &nbsp;|&nbsp; [About](https://idealab-kncet.github.io/IdeaLab/about) &nbsp;|&nbsp; [Services](https://idealab-kncet.github.io/IdeaLab/services) &nbsp;|&nbsp; [Facilities](https://idealab-kncet.github.io/IdeaLab/facilities) &nbsp;|&nbsp; [Contact](https://idealab-kncet.github.io/IdeaLab/contact)
 
 </div>
 
@@ -84,7 +83,7 @@ IPR &middot; Networking
 - **Fast and lightweight.** Single-page React app on Vite, with all photos pre-resized
   (max 1600px) and served as WebP.
 - **Responsive design.** Built to read well on phones, tablets and desktops.
-- **Reliable hosting.** Served from Firebase Hosting on the college domain, with a GitHub Pages mirror deployed automatically by GitHub Actions on every push to `main`.
+- **Automated hosting.** Deployed to GitHub Pages by GitHub Actions on every push to `main`.
 
 ## Tech stack
 
@@ -95,7 +94,7 @@ IPR &middot; Networking
 | Routing | React Router 7 |
 | SEO | react-helmet-async, JSON-LD, build-time prerendering with Puppeteer |
 | Quality | ESLint 9 |
-| Hosting | Firebase Hosting, GitHub Pages (GitHub Actions) |
+| Hosting | GitHub Pages (GitHub Actions) |
 
 ## Architecture
 
@@ -111,7 +110,6 @@ IPR &middot; Networking
 │   ├── pages/            One component per route
 │   ├── App.jsx           Route definitions
 │   └── main.jsx          Application entry point
-├── firebase.json         Hosting configuration
 └── vite.config.js        Build configuration
 ```
 
@@ -132,7 +130,7 @@ IPR &middot; Networking
   </tr>
   <tr>
     <td><strong>Website</strong></td>
-    <td><a href="https://idealab.kongunadu.ac.in/">idealab.kongunadu.ac.in</a></td>
+    <td><a href="https://idealab-kncet.github.io/IdeaLab/">idealab-kncet.github.io/IdeaLab</a></td>
   </tr>
 </table>
 
