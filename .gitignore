@@ -84,9 +84,6 @@ dist-ssr
 # dataconnect generated files
 .dataconnect
 
-# Editor/agent tool state (local only, not part of the project)
-.claude/
-.qodo/
 
 # Ad-hoc local scripts used while debugging (screenshot/diagnostic throwaways)
 _shot*.mjs
